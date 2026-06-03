@@ -77,19 +77,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Palmetto Elite Detailing — Premium Auto Detailing in Lexington, SC" },
+      {
+        name: "description",
+        content:
+          "Premium paint correction, ceramic coatings, and luxury auto detailing serving Lexington, Columbia, and the Midlands of South Carolina.",
+      },
+      { name: "author", content: "Palmetto Elite Detailing" },
+      { property: "og:title", content: "Palmetto Elite Detailing" },
+      {
+        property: "og:description",
+        content: "Premium auto detailing, paint correction, and ceramic coatings in Lexington, SC.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap",
       },
     ],
   }),
